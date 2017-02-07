@@ -1,0 +1,24 @@
+python -m django --version
+django-admin startproject mysite
+python manage.py startapp mylist
+cd c:/
+cd inetpub/mysite
+
+python manage.py runserver
+python manage.py runserver 8080
+python manage.py runserver 0.0.0.0:8000
+
+python manage.py startapp polls
+
+
+python manage.py makemigrations polls
+python manage.py makemigrations home
+python manage.py sqlmigrate polls 0001
+python manage.py sqlmigrate mylist 0001
+python manage.py migrate
+python manage.py check
+
+python manage.py shell
+python manage.py createsuperuser
+http://127.0.0.1:8000/admin
+python -c "import django; print(django.__path__)"
