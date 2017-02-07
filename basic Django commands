@@ -4,6 +4,8 @@ python -m django --version
 cd c:/
 cd inetpub/mysite
 django-admin startproject django_site (mysite)
+django-admin startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
+
 python manage.py startapp basic_app (mylist, polls)
 
 # start builtin server
