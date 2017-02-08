@@ -4,6 +4,8 @@ python -m django --version
 cd c:/
 cd inetpub/mysite
 django-admin startproject django_site (mysite)
+
+# start a new app
 python manage.py startapp basic_app (mylist, polls)
 
 # start builtin server
@@ -11,9 +13,10 @@ python manage.py runserver
 python manage.py runserver 8080
 python manage.py runserver 0.0.0.0:8000
 
-# db migrations
-python manage.py makemigrations home, polls
+# db app migrations
+python manage.py makemigrations basic_app, home, polls
 python manage.py sqlmigrate polls 0001, mylist 0001
+
 python manage.py migrate
 python manage.py check
 
