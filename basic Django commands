@@ -16,7 +16,9 @@ python manage.py startapp basic_app (mylist, polls)
 # start builtin server
 python manage.py runserver
 python manage.py runserver 8080
+cd C:/inetpub/mysite
 python manage.py runserver 0.0.0.0:8000
+http://127.0.0.1:8000/
 
 # db app migrations
 python manage.py makemigrations basic_app, home, polls
